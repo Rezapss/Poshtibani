@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت اطلاعات</title>
+    <link rel="stylesheet" href="style-work.css">
+    <script src="/work/script.js" defer></script>
+    <script src="https://unpkg.com/jalali-moment/dist/jalali-moment.browser.js"></script>
+</head>
+<body dir="rtl">
+    <div class="user">
+        <div class="user-navbar">
+            <div class="title-user">
+                <h1 id="user-name">رضا پوراصغر</h1>
+                <h2 id="date-now">گرگان</h2>
+            </div>
+            <figure class="avatar">
+                <img src="/user-avatar/1702576863994.jpg" alt="">
+            </figure>
+        </div>
+        <div class="nav">
+            <a href="/storage/storage.html"><img src="/icon/storage.png" alt="انبار"></a>
+            <a href="/chart/chart.html"><img src="/icon/chart.png" alt=""></a>
+            <a href="/job/job.html"><img src="/icon/job.png" alt=""></a>
+            <a href="/index.html"><img src="/icon/exit.png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- form -->
+    <form data-multi-step class="data-multi-step" method="get" action="/server.html">
+        <div class="card" data-step>
+        <h2 class="step-title">اطلاعات را کامل کنید</h2>
+            <div class="form-group">
+                <input type="number" name="merchant-id" id="merchant-id" placeholder="کد پذیرنده" required>
+                <div class="form-group">
+                    <div class="checkbox-wrapper-22">
+                        <label class="switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                        </label>
+                        <h4>رول رسانی</h4>
+                    </div>    
+                </div>
+            </div>
+            <div class="form-group" id="rol-number">
+            </div>
+            <div class="form-group">
+                <textarea name="merchant-problem" id="merchant-problem" placeholder="درخواست و مشکلات پذیرنده" cols="30" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <textarea name="merchant-edit" id="merchant-edit" placeholder="ویرایش شماره تماس و آدرس پذیرنده" cols="30" rows="3"></textarea>
+            </div>
+            <input type="button" data-next name="next" class="next action-button" value="بعدی">
+        </div>
+        <div class="card" data-step>
+            <h2 class="step-title">خدمات انجام شده را انتخاب کنید</h2>
+                <div class="form-group">
+                    <select name="jam-avari" id="jam-avari">
+                        <option value="" disabled selected>انتخاب کنید</option>
+                        <option value="1">نصب</option>
+                        <option value="2">تیکت</option>
+                        <option value="3">جمع آوری</option>
+                        <option value="4">تحویلگیری</option>
+                    </select>
+                </div>
+                <div class="form-group" id="div-mayoub">
+                </div>
+                <div class="form-group">
+                    <h3>رسید تراکنش</h3>
+                    <input type="file" name="" id="">
+                </div>
+                <input type="button" data-next name="next" class="next action-button" value="بعدی">
+                <input type="button" data-previous name="previous" class="previous action-button" value="قبلی">
+        </div>
+        <div class="card" data-step>
+            <h2 class="step-title">امضا پذیرنده</h2>
+            <div class="form-group">
+                <canvas height="370" width="300" class="signature-pad"></canvas>
+                <p><a href="#" class="clear-button">پاک کردن</a></p>
+            </div>
+            <input type="submit" data-next name="submit" class="next action-button" value="ثبت">
+            <input type="button" data-previous name="previous" class="previous action-button" value="قبلی">
+        </div>
+    </form>
+</body>
+</html>

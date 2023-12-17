@@ -1,0 +1,133 @@
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir-FD-WOL.woff2) format(woff2);
+}
+
+body {
+    height: 100%;
+}
+body {
+    background: #3498db;
+    font-family: vazir;
+    font-size: 12px;
+    line-height: 1.3;
+    width: 98%;
+    margin: 0 auto;
+}
+.user {
+    flex: 0 1 45px;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+#user-name,#date-now {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 5px;
+}
+#date-now {
+    color: rgba(225, 255, 255, .5);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.title-user{
+    position: absolute;
+    left: 80px;
+}
+
+.avatar {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 9px;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+}
+.avatar img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.nav{
+    display: flex;
+    float: right;
+    position: absolute;
+    top: 15%;
+    right: 20px;
+    overflow: hidden;
+    width: 70%;
+    max-width: 280px;
+    gap: 8px;
+}
+.nav img{
+    width: 50px;
+    height: 50px;
+}
+
+/* table */
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 450px;
+    margin: 5% auto;
+    border-radius: 10px 10px 0 0;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: medium;
+    min-width: 400px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr {
+    background-color: #0f31a1;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th ,.content-table td {
+    padding: 12px 15px;
+}
+.content-table tbody tr {
+    border-bottom: 2px solid #dddd;
+    text-align: center;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #000000;
+}
+#money {
+    background: #0c8b21;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عملکرد</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/jalali-moment/dist/jalali-moment.browser.js"></script>
+</head>
+<body dir="rtl">
+    <div class="user">
+        <div class="user-navbar">
+            <div class="title-user">
+                <h1 id="user-name">رضا پوراصغر</h1>
+                <h2 id="date-now"><script>
+                date =moment();
+                date = date.format("hh/m");
+                document.getElementById('date-now').innerHTML= date
+                </script></h2>
+            </div>
+            <figure class="avatar">
+                <img src="/user-avatar/1702576863994.jpg" alt="">
+            </figure>
+        </div>
+        <div class="nav">
+            <a href="/storage/storage.html"><img src="/icon/storage.png" alt="انبار"></a>
+            <a href="/chart/chart.html"><img src="/icon/chart.png" alt=""></a>
+            <a href="/job/job.html"><img src="/icon/job.png" alt=""></a>
+            <a href="/work/work-page.html"><img src="/icon/exit.png" alt=""></a>
+        </div>
+    </div>
+    <!-- form -->
+    <div class="table">
+        <h1>عملکرد پشتیبان</h1>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>نصب</th>
+                    <th>تیکت</th>
+                    <th>تحویلگیری</th>
+                    <th>بازدید</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>45</td>
+                    <td>127</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <h1>مبلغ دریافتی</h1>
+        <h2 id="money">100.000.00 ریال</h2>
+        <h1>رتبه پشتیبان</h1>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>رتبه</th>
+                    <th>نام و نام خانوادگی</th>
+                    <th>شهر</th>
+                    <th>عملکرد</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>رضا پوراصغر</td>
+                    <td>گرگان</td>
+                    <td>127</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ایمان رفیعی</td>
+                    <td>گرگان</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>مصطفی گل</td>
+                    <td>گرگان</td>
+                    <td>70</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

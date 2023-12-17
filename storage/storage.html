@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انبار پشتیبان</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/jalali-moment/dist/jalali-moment.browser.js"></script>
+</head>
+<body dir="rtl">
+    <div class="user">
+        <div class="user-navbar">
+            <div class="title-user">
+                <h1 id="user-name">رضا پوراصغر</h1>
+                <h2 id="date-now"><script>
+                date =moment();
+                date = date.format("hh/m");
+                document.getElementById('date-now').innerHTML= date
+                </script></h2>
+            </div>
+            <figure class="avatar">
+                <img src="/user-avatar/1702576863994.jpg" alt="">
+            </figure>
+        </div>
+        <div class="nav">
+            <a href="/storage/storage.html"><img src="/icon/storage.png" alt="انبار"></a>
+            <a href="/chart/chart.html"><img src="/icon/chart.png" alt=""></a>
+            <a href="/job/job.html"><img src="/icon/job.png" alt=""></a>
+            <a href="/work/work-page.html"><img src="/icon/exit.png" alt=""></a>
+        </div>
+    </div>
+    <!-- form -->
+    <div class="table">
+        <h1>انبار پشتیبان</h1>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>ردیف</th>
+                    <th>سریال دستگاه</th>
+                    <th>تاریخ رسید</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>316752275</td>
+                    <td>1402/3/25</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>317538984</td>
+                    <td>1402/3/27</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2K123275</td>
+                    <td>1402/7/07</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>تجهیزات فروشگاهی</h1>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>ردیف</th>
+                    <th>نوع </th>
+                    <th>سریال </th>
+                    <th>تاریخ رسید</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>مودم</td>
+                    <td>254323</td>
+                    <td>1402/25/04</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>صندوق فروشگاهی</td>
+                    <td>589432</td>
+                    <td>1402/05/12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
