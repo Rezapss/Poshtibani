@@ -119,6 +119,13 @@ canvas.addEventListener('pointerdown',handlePointerDown,)
 canvas.addEventListener('pointerup',handlePointerUp,)
 canvas.addEventListener('pointermove',handlePointerMove,)
 
+// Save signature
+
+
+// post signature
+
+
+
 
 // EventListener
 

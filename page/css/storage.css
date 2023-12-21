@@ -22,13 +22,14 @@ body {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    height: 80px;
+    height: 70px;
     padding-top: 10px;
     border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 #user-name,#date-now {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 17px;
     margin: 0;
     padding-top: 5px;
 }
@@ -39,26 +40,7 @@ body {
 }
 .title-user{
     position: absolute;
-    left: 80px;
-}
-
-.avatar {
-    position: absolute;
-    z-index: 1;
-    top: 8px;
-    left: 9px;
-    border-radius: 30px;
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    border: 2px solid rgba(255, 255, 255, 0.24);
-}
-.avatar img{
-    width: 100%;
-    height: auto;
-    
+    left: 20px;
 }
 
 .nav{
@@ -68,9 +50,9 @@ body {
     top: 15%;
     right: 20px;
     overflow: hidden;
-    width: 70%;
+    width: 60%;
     max-width: 280px;
-    gap: 8px;
+    gap: 2px;
 }
 .nav img{
     width: 50px;
@@ -83,18 +65,18 @@ body {
     flex-direction: column;
     align-items: center;
     background: #fff;
-    width: 450px;
+    width: 350px;
     margin: 5% auto;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 .content-table{
     border-collapse: collapse;
-    margin: 25px 0;
-    font-size: medium;
-    min-width: 400px;
+    font-size: small;
+    width: 300px;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
 }
 .content-table thead tr {
     background-color: #0f31a1;
@@ -104,7 +86,7 @@ body {
 }
 
 .content-table th ,.content-table td {
-    padding: 12px 15px;
+    padding: 12px 9px;
 }
 .content-table tbody tr {
     border-bottom: 2px solid #dddd;
@@ -117,15 +99,7 @@ body {
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #000000;
 }
-#money {
-    background: #0c8b21;
-    color: #fff;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 25px;
-}
+
 h1 {
     font-size: 20px;
     font-weight: normal;

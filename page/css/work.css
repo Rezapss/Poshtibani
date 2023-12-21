@@ -22,13 +22,14 @@ body {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    height: 80px;
+    height: 70px;
     padding-top: 10px;
     border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 #user-name,#date-now {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 17px;
     margin: 0;
     padding-top: 5px;
 }
@@ -39,27 +40,9 @@ body {
 }
 .title-user{
     position: absolute;
-    left: 80px;
+    left: 20px;
 }
 
-.avatar {
-    position: absolute;
-    z-index: 1;
-    top: 8px;
-    left: 9px;
-    border-radius: 30px;
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    border: 2px solid rgba(255, 255, 255, 0.24);
-}
-.avatar img{
-    width: 100%;
-    height: auto;
-    
-}
 
 .nav{
     display: flex;
@@ -68,9 +51,9 @@ body {
     top: 15%;
     right: 20px;
     overflow: hidden;
-    width: 70%;
+    width: 60%;
     max-width: 280px;
-    gap: 8px;
+    gap: 2px;
 }
 .nav img{
     width: 50px;
@@ -87,6 +70,7 @@ body {
     margin: 8% auto;
     border-radius: 5px;
     display: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .form-group{
     display: flex;
