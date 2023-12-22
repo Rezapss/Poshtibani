@@ -14,6 +14,7 @@ let writingMode = false;
 
 // checkbox
 const checkbox = document.querySelector("#checkbox")
+const ticket = document.querySelector("#ticket")
 
 // jam-avari
 const jamAvari = document.querySelector("#jam-avari")
